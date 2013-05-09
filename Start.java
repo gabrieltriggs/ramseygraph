@@ -17,7 +17,8 @@ public class Start {
 	 * to the constructor for graph.
 	 */
 	public void start() {
-		RamseyGraph graph = new RamseyGraph("");
+		String chromosome = RamseyGraph.chromosome196;
+		RamseyGraph graph = new RamseyGraph(chromosome, Evaluator.getCliques(chromosome));
 		graph.start();
 	}
 }
